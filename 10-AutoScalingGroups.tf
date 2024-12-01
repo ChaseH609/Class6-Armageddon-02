@@ -151,7 +151,7 @@ resource "aws_autoscaling_policy" "app2_scaling_policy" {
 
 # Enabling instance scale-in protection
 # Create a new ALB Target Group attachment
-resource "aws_autoscaling_attachment" "app1_asg_attachment" {
+resource "aws_autoscaling_attachment" "app2_asg_attachment" {
   autoscaling_group_name = aws_autoscaling_group.app2_asg.id
   lb_target_group_arn    = aws_lb_target_group.app2_tg.arn
 }
@@ -229,7 +229,7 @@ resource "aws_autoscaling_policy" "app3_scaling_policy" {
 }
 
 # Enabling instance scale-in protection
-resource "aws_autoscaling_attachment" "app1_asg_attachment" {
+resource "aws_autoscaling_attachment" "app3_asg_attachment" {
   autoscaling_group_name = aws_autoscaling_group.app3_asg.id
   lb_target_group_arn    = aws_lb_target_group.app3_tg.arn
 }
@@ -307,7 +307,7 @@ resource "aws_autoscaling_policy" "app4_scaling_policy" {
 }
 
 # Enabling instance scale-in protection
-resource "aws_autoscaling_attachment" "app1_asg_attachment" {
+resource "aws_autoscaling_attachment" "app4_asg_attachment" {
   autoscaling_group_name = aws_autoscaling_group.app4_asg.id
   lb_target_group_arn    = aws_lb_target_group.app4_tg.arn
 }
@@ -385,7 +385,7 @@ resource "aws_autoscaling_policy" "app5_scaling_policy" {
 }
 
 # Enabling instance scale-in protection
-resource "aws_autoscaling_attachment" "app1_asg_attachment" {
+resource "aws_autoscaling_attachment" "app5_asg_attachment" {
   autoscaling_group_name = aws_autoscaling_group.app5_asg.id
   lb_target_group_arn    = aws_lb_target_group.app5_tg.arn
 }
@@ -463,7 +463,7 @@ resource "aws_autoscaling_policy" "app6_scaling_policy" {
 }
 
 # Enabling instance scale-in protection
-resource "aws_autoscaling_attachment" "app1_asg_attachment" {
+resource "aws_autoscaling_attachment" "app6_asg_attachment" {
   autoscaling_group_name = aws_autoscaling_group.app6_asg.id
   lb_target_group_arn    = aws_lb_target_group.app6_tg.arn
 }
@@ -541,7 +541,7 @@ resource "aws_autoscaling_policy" "app7_scaling_policy" {
 }
 
 # Enabling instance scale-in protection
-resource "aws_autoscaling_attachment" "app1_asg_attachment" {
+resource "aws_autoscaling_attachment" "app7_asg_attachment" {
   autoscaling_group_name = aws_autoscaling_group.app7_asg.id
   lb_target_group_arn    = aws_lb_target_group.app7_tg.arn
 }
