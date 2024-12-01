@@ -11,7 +11,7 @@ resource "aws_autoscaling_group" "app1_asg" {
   health_check_type          = "ELB"
   health_check_grace_period  = 300
   force_delete               = true
-  target_group_arns          = [aws_lb_target_group.app1_tg.arn]
+  target_group_arn          = [aws_lb_target_group.app1_tg.arn]
 
   launch_template {
     id      = aws_launch_template.app1_LT.id
@@ -170,7 +170,7 @@ resource "aws_autoscaling_group" "app3_asg" {
   health_check_type          = "ELB"
   health_check_grace_period  = 300
   force_delete               = true
-  target_group_arns          = [aws_lb_target_group.app3_tg.arn]
+  target_group_arn          = [aws_lb_target_group.app3_tg.arn]
 
   launch_template {
     id      = aws_launch_template.app3_LT.id
@@ -249,7 +249,7 @@ resource "aws_autoscaling_group" "app4_asg" {
   health_check_type          = "ELB"
   health_check_grace_period  = 300
   force_delete               = true
-  target_group_arns          = [aws_lb_target_group.app4_tg.arn]
+  target_group_arn          = [aws_lb_target_group.app4_tg.arn]
 
   launch_template {
     id      = aws_launch_template.app4_LT.id
@@ -328,7 +328,7 @@ resource "aws_autoscaling_group" "app5_asg" {
   health_check_type          = "ELB"
   health_check_grace_period  = 300
   force_delete               = true
-  target_group_arns          = [aws_lb_target_group.app5_tg.arn]
+  target_group_arn          = [aws_lb_target_group.app5_tg.arn]
 
   launch_template {
     id      = aws_launch_template.app5_LT.id
@@ -407,7 +407,7 @@ resource "aws_autoscaling_group" "app6_asg" {
   health_check_type          = "ELB"
   health_check_grace_period  = 300
   force_delete               = true
-  target_group_arns          = [aws_lb_target_group.app6_tg.arn]
+  target_group_arn          = [aws_lb_target_group.app6_tg.arn]
 
   launch_template {
     id      = aws_launch_template.app6_LT.id
@@ -486,7 +486,7 @@ resource "aws_autoscaling_group" "app7_asg" {
   health_check_type          = "ELB"
   health_check_grace_period  = 300
   force_delete               = true
-  target_group_arns          = [aws_lb_target_group.app7_tg.arn]
+  target_group_arn          = [aws_lb_target_group.app7_tg.arn]
 
   launch_template {
     id      = aws_launch_template.app7_LT.id
