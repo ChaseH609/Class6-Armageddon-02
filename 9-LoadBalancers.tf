@@ -15,7 +15,7 @@ resource "aws_lb" "app1_alb" {
     Service = "app1"
   }
 }
-resource "aws_lb_listener" "http" {
+resource "aws_lb_listener" "app1_http" {
   load_balancer_arn = aws_lb.app1_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -43,7 +43,7 @@ resource "aws_lb" "app2_alb" {
     Service = "app2"
   }
 }
-resource "aws_lb_listener" "http" {
+resource "aws_lb_listener" "app2_http" {
   load_balancer_arn = aws_lb.app2_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -71,7 +71,7 @@ resource "aws_lb" "app3_alb" {
     Service = "app3"
   }
 }
-resource "aws_lb_listener" "http" {
+resource "aws_lb_listener" "app3_http" {
   load_balancer_arn = aws_lb.app3_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -99,7 +99,7 @@ resource "aws_lb" "app4_alb" {
     Service = "app4"
   }
 }
-resource "aws_lb_listener" "http" {
+resource "aws_lb_listener" "app4_http" {
   load_balancer_arn = aws_lb.app4_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -127,7 +127,7 @@ resource "aws_lb" "app5_alb" {
     Service = "app5"
   }
 }
-resource "aws_lb_listener" "http" {
+resource "aws_lb_listener" "app5_http" {
   load_balancer_arn = aws_lb.app5_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -155,7 +155,7 @@ resource "aws_lb" "app6_alb" {
     Service = "app6"
   }
 }
-resource "aws_lb_listener" "http" {
+resource "aws_lb_listener" "app6_http" {
   load_balancer_arn = aws_lb.app6_alb.arn
   port              = 80
   protocol          = "HTTP"
@@ -183,7 +183,7 @@ resource "aws_lb" "app7_alb" {
     Service = "app7"
   }
 }
-resource "aws_lb_listener" "http" {
+resource "aws_lb_listener" "app7_http" {
   load_balancer_arn = aws_lb.app7_alb.arn
   port              = 80
   protocol          = "HTTP"
