@@ -6,7 +6,7 @@ resource "aws_launch_template" "app1_LT" {
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app1-sg01-servers.id]
+  vpc_security_group_ids = [aws_security_group.app1-lb01-sg01.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
@@ -76,7 +76,7 @@ resource "aws_launch_template" "app2_LT" {
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app2-sg01-servers.id]
+  vpc_security_group_ids = [aws_security_group.app2-lb01-sg01.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
@@ -146,7 +146,7 @@ resource "aws_launch_template" "app3_LT" {
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app3-sg01-servers.id]
+  vpc_security_group_ids = [aws_security_group.app3-lb01-sg01.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
@@ -216,7 +216,7 @@ resource "aws_launch_template" "app4_LT" {
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app4-sg01-servers.id]
+  vpc_security_group_ids = [aws_security_group.app4-lb01-sg01.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
@@ -286,7 +286,7 @@ resource "aws_launch_template" "app5_LT" {
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app5-sg01-servers.id]
+  vpc_security_group_ids = [aws_security_group.app5-lb01-sg01.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
@@ -356,7 +356,7 @@ resource "aws_launch_template" "app6_LT" {
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app6-sg01-servers.id]
+  vpc_security_group_ids = [aws_security_group.app6-lb01-sg01.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
@@ -426,7 +426,7 @@ resource "aws_launch_template" "app7_LT" {
 
   key_name = "MyLinuxBox"
 
-  vpc_security_group_ids = [aws_security_group.app7-sg01-servers.id]
+  vpc_security_group_ids = [aws_security_group.app7-lb01-sg01.id]
 
   user_data = base64encode(<<-EOF
     #!/bin/bash
